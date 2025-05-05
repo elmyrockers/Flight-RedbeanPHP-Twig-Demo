@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twig/twig": "3.14.1",
+        "flightphp/core": "^3.15",
+        "gabordemooij/redbean": "dev-master"
+    }
+}
