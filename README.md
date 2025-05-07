@@ -12,7 +12,7 @@ It works very well in shared hosting environments with limited CPU and memory, m
 
 As the project grows, it's also possible to evolve the architecture:
 > - Break the app into microservices if needed.
-> - Gradually rewrite critical services in Go, C#, or Java to benefit from static typing, native concurrency, or high throughput — depending on the new demands.
+> - Gradually rewrite critical services in Rust, Go, C#, or Java to benefit from static typing, native concurrency, or high throughput — depending on the new demands.
 
 While PHP may lack the built-in concurrency models of Node.js, the thread management of Java/C#, or the compiled speed of Go, I still believe it's an excellent choice for rapid development, prototyping, and budget-friendly deployments.
 
@@ -21,5 +21,5 @@ RedBeanPHP is excellent for rapid prototyping and synchronous operations but may
 
 
 
-
+## Conclusion
 This stack is ideal for moving to production due to its simple architecture, which makes it easy to scale and adapt as your needs grow. Since Flight, RedBeanPHP, and Twig are separate components, they can be easily replaced later with high-performance libraries or microservices. Alternatively, you can gradually transition to more performant languages like Rust, Go, C#, or Java as your application demands increase.
