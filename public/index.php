@@ -35,8 +35,9 @@ use Twig\Loader\FilesystemLoader;
 		Flight::redirect( '/users' );
 	});
 
-	Flight::route('/users', ['App\\Controllers\\UserController', 'index']);
-	Flight::route( '/users/new', ['App\\Controllers\\UserController', 'new'] );
+	Flight::route('GET /users', ['App\\Controllers\\UserController', 'index']);
+	Flight::route( 'GET /users/new', ['App\\Controllers\\UserController', 'new'] );
+	Flight::route( 'POST /users/new', ['App\\Controllers\\UserController', 'new_process'] );
 
 
 
