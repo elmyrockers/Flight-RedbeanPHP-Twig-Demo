@@ -26,17 +26,16 @@ Laravel is powerful but too heavy for shared hosting or high-performance needs. 
 ## RedbeanPHP for Rapid Prototyping & Development
 RedBeanPHP is great for rapid prototyping and synchronous tasks, but may become a bottleneck under high loads due to its lack of asynchronous support. Once moved to a VPS, it can be easily replaced with more scalable solutions like Swoole MySQL.
 
-## Conclusion
-This stack is ideal for moving to production due to its simple architecture, which makes it easy to scale and adapt as our needs grow. Since Flight, RedBeanPHP, and Twig are separate components, they can be easily replaced later with high-performance libraries or microservices. Alternatively, we can gradually transition to more performant languages like Rust, Go, C#, or Java as our application's demands increase.
-
-
-
+## Comparison Between Shared Hosting & VPS (2-core vCPU, 2GB RAM)
 | Feature                  | Shared Hosting          | VPS (RedBeanPHP + Swoole + JIT)  | VPS (Swoole MySQL + JIT)        |
 | ------------------------ | ----------------------- | -------------------------------- | ------------------------------- |
-| Stage                    | 1                       | 2                                | 3                               |
+| Phase                    | 1                       | 2                                | 3                               |
 | Stack                    | Flight+Redbeanphp+Twig  | Flight+Redbeanphp+Twig+Swoole+JIT| Flight+Swoole MySQL+Twig+Swoole+JIT |
 | Concurrent Users Support | Up to 50 users          | Up to 500 users                  | Up to 3000 users                |
 | Async Support            | ❌ Not supported         | ⚠️ Partial (via Swoole HTTP)     | ✅ Full async (Swoole HTTP + Swoole MySQL)   |
 | JIT Performance Boost    | ❌ No                    | ✅ Yes                            | ✅ Yes                           |
 | Database Layer           | RedBeanPHP (sync only)  | RedBeanPHP (sync only)           | Swoole MySQL (async)            |
 | Best Use Case            | Early-stage, low budget | Moderate traffic, ready to scale | High concurrency, scalable SaaS |
+
+## Conclusion
+This stack is ideal for moving to production due to its simple architecture, which makes it easy to scale and adapt as our needs grow. Since Flight, RedBeanPHP, and Twig are separate components, they can be easily replaced later with high-performance libraries or microservices. Alternatively, we can gradually transition to more performant languages like Rust, Go, C#, or Java as our application's demands increase.
