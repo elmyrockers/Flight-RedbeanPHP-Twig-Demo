@@ -22,4 +22,4 @@ RedBeanPHP is excellent for rapid prototyping and synchronous operations but may
 
 
 
-This stack is ideal for making the move to production due to its simple architecture, making it easy to scale and adapt later as your needs grow.
+This stack is ideal for moving to production due to its simple architecture, which makes it easy to scale and adapt as your needs grow. Since Flight, RedBeanPHP, and Twig are separate components, they can be easily replaced later with high-performance libraries or microservices. Alternatively, you can gradually transition to more performant languages like Rust, Go, C#, or Java as your application demands increase.
