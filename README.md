@@ -30,7 +30,7 @@ RedBeanPHP is great for rapid prototyping and synchronous tasks, but may become 
 | Feature                  | Shared Hosting          | VPS (RedBeanPHP + Swoole + JIT)  | VPS (Swoole MySQL + JIT)        |
 | ------------------------ | ----------------------- | -------------------------------- | ------------------------------- |
 | Phase                    | 1                       | 2                                | 3                               |
-| Stack                    | Flight+Redbeanphp+Twig  | Flight+Redbeanphp+Twig+Swoole+JIT| Flight+Swoole MySQL+Twig+Swoole+JIT |
+| Stack                    | Flight + Redbeanphp + Twig | Flight + Redbeanphp + Twig + Swoole + JIT | Flight + Swoole MySQL + Twig + Swoole + JIT |
 | Concurrent Users Support | Up to 50 users          | Up to 500 users                  | Up to 3000 users                |
 | Async Support            | ❌ Not supported         | ⚠️ Partial (via Swoole HTTP)     | ✅ Full async (Swoole HTTP + Swoole MySQL)   |
 | JIT Performance Boost    | ❌ No                    | ✅ Yes                            | ✅ Yes                           |
