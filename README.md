@@ -28,3 +28,13 @@ RedBeanPHP is great for rapid prototyping and synchronous tasks, but may become 
 
 ## Conclusion
 This stack is ideal for moving to production due to its simple architecture, which makes it easy to scale and adapt as our needs grow. Since Flight, RedBeanPHP, and Twig are separate components, they can be easily replaced later with high-performance libraries or microservices. Alternatively, we can gradually transition to more performant languages like Rust, Go, C#, or Java as our application's demands increase.
+
+
+
+| Feature                  | Shared Hosting          | VPS (RedBeanPHP + Swoole + JIT)  | VPS (Swoole MySQL + JIT)        |
+| ------------------------ | ----------------------- | -------------------------------- | ------------------------------- |
+| Concurrent Users Support | Up to 50                | Up to 500                        | Up to 3000                      |
+| Async Support            | ❌ Not supported         | ⚠️ Partial (via Swoole HTTP)     | ✅ Full async (Swoole + MySQL)   |
+| JIT Performance Boost    | ❌ No                    | ✅ Yes                            | ✅ Yes                           |
+| Database Layer           | RedBeanPHP (sync only)  | RedBeanPHP (sync only)           | Swoole MySQL (async)            |
+| Best Use Case            | Early-stage, low budget | Moderate traffic, ready to scale | High concurrency, scalable SaaS |
