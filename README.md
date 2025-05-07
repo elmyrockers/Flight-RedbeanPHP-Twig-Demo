@@ -1,6 +1,10 @@
 # Flight-RedbeanPHP-Twig-Demo
 A basic web application using Flight PHP microframework, RedBeanPHP ORM, and Twig template engine with simple CRUD operations.
 
+## Potential Challenges We're Preparing For
+> - **Early-Stage Budget Constraints:** Initially, we’ll deploy to shared hosting to keep costs low while validating demand.
+> - **Scalability Needs:** If user activity increases, we need the flexibility to move to a VPS and scale gradually.
+> - **Enterprise Growth Expectations:** As a SaaS/enterprise solution, the app must be ready to support up to 1 million users and thousands of concurrent sessions following a successful marketing campaign.
 
 ## My Opinion on This Stack's Scalability
 In my opinion, this stack — combining Flight, RedBeanPHP, and Twig — is ideal for building budget-friendly PHP web applications.
