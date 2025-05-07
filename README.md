@@ -27,7 +27,7 @@ Laravel is powerful but too heavy for shared hosting or high-performance needs. 
 RedBeanPHP is great for rapid prototyping and synchronous tasks, but may become a bottleneck under high loads due to its lack of asynchronous support. Once moved to a VPS, it can be easily replaced with more scalable solutions like Swoole MySQL.
 
 ## Comparison Between Shared Hosting & VPS (2-core vCPU, 2GB RAM)
-| Feature                  | Shared Hosting          | VPS (RedBeanPHP + Swoole + JIT)  | VPS (Swoole MySQL + JIT)        |
+| Feature                  | Shared Hosting          | VPS (2-core vCPU, 2GB RAM)       | VPS (2-core vCPU, 2GB RAM)      |
 | ------------------------ | ----------------------- | -------------------------------- | ------------------------------- |
 | Phase                    | 1                       | 2                                | 3                               |
 | Stack                    | Flight + Redbeanphp + Twig | Flight + Redbeanphp + Twig + Swoole + JIT | Flight + Swoole MySQL + Twig + Swoole + JIT |
