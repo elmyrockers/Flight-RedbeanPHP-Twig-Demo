@@ -19,23 +19,24 @@ use Twig\Loader\FilesystemLoader;
 
 
 
-
-
 // Setup Twig
-	$loader = new FilesystemLoader(__DIR__ . '/../app/views');
-	$twig = new Environment($loader);
-	Flight::set( 'twig', $twig ); // Share Twig with all routes
+	Flight::register( 'twig', Environment::class, [new FilesystemLoader(__DIR__ . '/../app/Views')] );
+
+
+
 
 // Setup RedBeanPHP
-	R::setup('sqlite:db/database.sqlite');
+	R::setup('sqlite:../db/database.db');
+
+
 
 // users route
 	Flight::route( '/', function(){
 		Flight::redirect( '/users' );
 	});
 
-	use App\Controllers\UserController;
-	Flight::route( '/users', [new UserController(), 'index'] );
+	Flight::route('/users', ['App\\Controllers\\UserController', 'index']);
+	Flight::route( '/users/new', ['App\\Controllers\\UserController', 'new'] );
 
 
 
