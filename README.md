@@ -21,7 +21,7 @@ As the project grows, it's also possible to evolve the architecture:
 While PHP may lack the built-in concurrency models of Node.js, the thread management of Java/C#, or the compiled speed of Go, I still believe it's an excellent choice for rapid development, prototyping, and budget-friendly deployments.
 
 ## Why Not Laravel?
-Laravel is powerful but too heavy for shared hosting or high-performance needs. It's tightly coupled with Eloquent and not optimized for asynchronous or concurrent processing. For many cases, we only need routing and middleware—a microframework like Flight is enough. RedBeanPHP is also far more lightweight than Eloquent, making this stack ideal for rapid development and easier to scale or upgrade later with tools like Swoole or more performant languages.
+Laravel is powerful but too heavy for shared hosting or high-performance needs. It's tightly coupled with Eloquent and not optimized for asynchronous or concurrent processing. For many cases, we only need routing and middleware—a microframework like Flight is enough. RedBeanPHP is also far more lightweight than Eloquent, making this stack ideal for rapid development. After moving to a VPS, it becomes easier to scale or upgrade with tools like Swoole or more performant languages.
 
 ## RedbeanPHP for Rapid Prototyping & Development
 RedBeanPHP is great for rapid prototyping and synchronous tasks, but may become a bottleneck under high loads due to its lack of asynchronous support. Once moved to a VPS, it can be easily replaced with more scalable solutions like Swoole MySQL.
