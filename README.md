@@ -35,7 +35,7 @@ This stack is ideal for moving to production due to its simple architecture, whi
 | ------------------------ | ----------------------- | -------------------------------- | ------------------------------- |
 | Stack                    | Flight+Redbeanphp+Twig  | Flight+Redbeanphp+Twig+Swoole+JIT| Flight+Swoole MySQL+Twig+Swoole+JIT |
 | Concurrent Users Support | Up to 50                | Up to 500                        | Up to 3000                      |
-| Async Support            | ❌ Not supported         | ⚠️ Partial (via Swoole HTTP)     | ✅ Full async (Swoole + MySQL)   |
+| Async Support            | ❌ Not supported         | ⚠️ Partial (via Swoole HTTP)     | ✅ Full async (Swoole HTTP + Swoole MySQL)   |
 | JIT Performance Boost    | ❌ No                    | ✅ Yes                            | ✅ Yes                           |
 | Database Layer           | RedBeanPHP (sync only)  | RedBeanPHP (sync only)           | Swoole MySQL (async)            |
 | Best Use Case            | Early-stage, low budget | Moderate traffic, ready to scale | High concurrency, scalable SaaS |
