@@ -24,9 +24,7 @@ While PHP may lack the built-in concurrency models of Node.js, the thread manage
 Laravel is powerful but too heavy for shared hosting or high-performance needs. It's tightly coupled with Eloquent and not optimized for asynchronous or concurrent processing. For many cases, we only need routing and middleware—a microframework like Flight is enough. RedBeanPHP is also far more lightweight than Eloquent, making this stack ideal for rapid development and easier to scale or upgrade later with tools like Swoole or more performant languages.
 
 ## RedbeanPHP for Rapid Prototyping & Development
-RedBeanPHP is excellent for rapid prototyping and synchronous operations but may face performance limitations under high loads due to its lack of support for asynchronous database interactions. For improved scalability, it can later be replaced with solutions like Swoole MySQL.
-
-
+RedBeanPHP is great for rapid prototyping and synchronous tasks, but may become a bottleneck under high loads due to its lack of asynchronous support. Once moved to a VPS, it can be easily replaced with more scalable solutions like Swoole MySQL.
 
 ## Conclusion
 This stack is ideal for moving to production due to its simple architecture, which makes it easy to scale and adapt as our needs grow. Since Flight, RedBeanPHP, and Twig are separate components, they can be easily replaced later with high-performance libraries or microservices. Alternatively, we can gradually transition to more performant languages like Rust, Go, C#, or Java as our application's demands increase.
