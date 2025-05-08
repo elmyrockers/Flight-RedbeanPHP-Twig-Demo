@@ -68,4 +68,18 @@ class UserController extends BaseController {
 		// Redirect to list of users table
 			Flight::redirect( '/users' );
 	}
+
+	public function delete_process( $id )
+	{
+		// Save into database
+			$userRepo = new UserRepository;
+			$ok = $userRepo->deleteUser( $id );
+
+		// Set flash message to be displayed later
+			if ( !$ok ) $_SESSION[ 'flash_message' ] = '<div class="alert alert-danger">Failed to delete the user record. Please try again.</div>';
+			else $_SESSION[ 'flash_message' ] = '<div class="alert alert-success">The user record has been deleted!</div>';
+
+		// Redirect to list of users table
+			Flight::redirect( '/users' );
+	}
 }
