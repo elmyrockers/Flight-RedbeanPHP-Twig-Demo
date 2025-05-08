@@ -1,6 +1,6 @@
 <?php
 require '../vendor/autoload.php';
-
+session_start();
 
 // Error Handling -------------------------------------------------------------------------------------------------------------
 	use Symfony\Component\ErrorHandler\Debug;
