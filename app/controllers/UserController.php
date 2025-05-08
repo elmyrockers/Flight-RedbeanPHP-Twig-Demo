@@ -23,6 +23,16 @@ class UserController extends BaseController {
 		$this->render( 'User/new.twig' );
 	}
 
+	public function edit()
+	{
+		$this->render( 'User/edit.twig' );
+	}
+
+	public function delete()
+	{
+		$this->render( 'User/delete.twig' );
+	}
+
 	public function new_process()
 	{
 		// Save into database
