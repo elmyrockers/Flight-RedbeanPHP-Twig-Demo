@@ -55,7 +55,7 @@ class UserRepository {
 			$user = R::load( 'user', $id );
 			return R::trash( $user );
 
-		// Ensure it success
+		// Ensure that it succeeds
 			$user = R::load( 'user', $id );
 			return !$user->id;
 	}
