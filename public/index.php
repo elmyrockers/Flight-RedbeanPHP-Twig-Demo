@@ -42,6 +42,8 @@ use Twig\Loader\FilesystemLoader;
 
 
 	Flight::route( 'POST /users/new', ['App\\Controllers\\UserController', 'new_process'] );
+	Flight::route( 'POST /users/edit/@id', ['App\\Controllers\\UserController', 'edit_process'] );
+	Flight::route( 'POST /users/delete/@id', ['App\\Controllers\\UserController', 'delete_process'] );
 
 
 
