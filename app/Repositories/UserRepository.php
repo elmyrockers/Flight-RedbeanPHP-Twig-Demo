@@ -42,10 +42,21 @@ class UserRepository {
 			$user->name = $formData['name'];
 			$user->email = $formData['email'];
 			$user->website = $formData['website'];
-			
+
 			return R::store( $user );
 		} catch (\RedBeanPHP\RedException $e) {
 			return false;
 		}
+	}
+
+	public function deleteUser( $id )
+	{
+		// Delete user
+			$user = R::load( 'user', $id );
+			return R::trash( $user );
+
+		// Ensure it success
+			$user = R::load( 'user', $id );
+			return !$user->id;
 	}
 }
