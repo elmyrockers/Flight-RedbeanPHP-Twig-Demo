@@ -37,6 +37,10 @@ use Twig\Loader\FilesystemLoader;
 
 	Flight::route('GET /users', ['App\\Controllers\\UserController', 'index']);
 	Flight::route( 'GET /users/new', ['App\\Controllers\\UserController', 'new'] );
+	Flight::route( 'GET /users/edit/@id', ['App\\Controllers\\UserController', 'edit'] );
+	Flight::route( 'GET /users/delete/@id', ['App\\Controllers\\UserController', 'delete'] );
+
+
 	Flight::route( 'POST /users/new', ['App\\Controllers\\UserController', 'new_process'] );
 
 
