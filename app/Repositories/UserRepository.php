@@ -35,5 +35,17 @@ class UserRepository {
 		}
 	}
 
-
+	public function editUser( $formData )
+	{
+		try {
+			$user = R::load( 'user', $formData['id'] );
+			$user->name = $formData['name'];
+			$user->email = $formData['email'];
+			$user->website = $formData['website'];
+			
+			return R::store( $user );
+		} catch (\RedBeanPHP\RedException $e) {
+			return false;
+		}
+	}
 }
