@@ -3,8 +3,7 @@ namespace App\Repositories;
 
 use RedBeanPHP\R;
 
-class UserRepository {
-	// protected $user;R::dispense( 'users' );
+class UserRepository extends BaseController {
 
 	public function __construct() {
 
