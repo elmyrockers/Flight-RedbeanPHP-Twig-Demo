@@ -31,9 +31,12 @@ class UserController extends BaseController {
 		$this->render( 'User/edit.twig', compact( 'user' ) );
 	}
 
-	public function delete()
+	public function delete( $id )
 	{
-		$this->render( 'User/delete.twig' );
+		// Get a user
+			$userRepo = new UserRepository;
+			$user = $userRepo->getUserById( $id );
+		$this->render( 'User/delete.twig', compact( 'user' ) );
 	}
 
 	public function new_process()
