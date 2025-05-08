@@ -26,7 +26,7 @@ use Twig\Loader\FilesystemLoader;
 
 
 // Setup RedBeanPHP
-	R::setup('sqlite:../db/database.db');
+	R::setup('sqlite:../db/sqlite.db');
 
 
 
