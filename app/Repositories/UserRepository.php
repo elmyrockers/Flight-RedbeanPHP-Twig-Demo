@@ -52,7 +52,7 @@ class UserRepository extends BaseRepository {
 	{
 		// Delete user
 			$user = R::load( 'user', $id );
-			return R::trash( $user );
+			R::trash( $user );
 
 		// Ensure that it succeeds
 			$user = R::load( 'user', $id );
