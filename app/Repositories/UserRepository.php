@@ -55,7 +55,6 @@ class UserRepository extends BaseRepository {
 			R::trash( $user );
 
 		// Ensure that it succeeds
-			$user = R::load( 'user', $id );
 			return !$user->id;
 	}
 }
