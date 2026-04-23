@@ -1,5 +1,5 @@
 @echo off
-chcp 65001 >nul
+chcp 65001
 title Swoole Http Server
 color 0B
 
