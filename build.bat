@@ -7,7 +7,7 @@ wsl bash -c "docker images -q flight-swoole-app | grep -q ."
 
 if %errorlevel% equ 0 (
     echo [SKIP] Image 'flight-swoole-app' already exists. 
-    echo [INFO] Run your 'run.bat' to start the container.
+    echo [INFO] Run your 'start.bat' to start the container.
     pause
     exit /b
 )
