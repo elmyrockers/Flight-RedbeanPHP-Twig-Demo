@@ -1,7 +1,7 @@
 @echo off
 chcp 65001>nul
 title Swoole Http Server
-color 0B
+color 0F
 
 echo.
 echo ╔══════════════════════════════════════╗
