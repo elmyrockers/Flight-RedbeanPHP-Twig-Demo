@@ -111,5 +111,5 @@ require 'vendor/autoload.php';
 
 
 
-	echo "Swoole server started at http://127.0.0.1:8080\n";
+	echo "Swoole http server started at http://127.0.0.1:8080\n";
 	$server->start();
