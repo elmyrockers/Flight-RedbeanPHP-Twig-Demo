@@ -24,5 +24,5 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-echo [SUCCESS] Build complete. You can now use run.bat.
+echo [SUCCESS] Build complete. You can now use start.bat.
 pause
