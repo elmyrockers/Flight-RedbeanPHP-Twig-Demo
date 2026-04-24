@@ -3,7 +3,19 @@ A basic web application using Flight PHP microframework, RedBeanPHP ORM, and Twi
 
 ## Technology Stack
 
-- PHP
+![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php&logoColor=white)
+![Swoole](https://img.shields.io/badge/Swoole-Async-ff69b4)
+![Flight](https://img.shields.io/badge/Flight-Micro--Framework-lightgrey)
+![RedBeanPHP](https://img.shields.io/badge/RedBeanPHP-ORM-red)
+![Twig](https://img.shields.io/badge/Twig-Templating-009688?logo=twig&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
+
+![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white)
+![WSL](https://img.shields.io/badge/WSL-Linux%20on%20Windows-4D4D4D?logo=windows&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-Shell-121011?logo=gnubash&logoColor=white)
+![Batch](https://img.shields.io/badge/Batch-Windows%20Script-0078D6?logo=windows&logoColor=white)
+
+<!-- - PHP
 - Swoole (Async HTTP Server)
 - Flight (Micro Framework)
 - RedBeanPHP (ORM)
@@ -12,7 +24,7 @@ A basic web application using Flight PHP microframework, RedBeanPHP ORM, and Twi
 - Docker (Containerization)
 - WSL (Windows Subsystem for Linux)
 - Bash (Shell Script)
-- Windows Batch Script
+- Windows Batch Script -->
 
 ## Potential Challenges We're Preparing For
 > - **Early-Stage Budget Constraints:** Initially, we’ll deploy to shared hosting to keep costs low while validating demand.
