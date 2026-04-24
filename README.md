@@ -1,5 +1,5 @@
 # Flight-RedbeanPHP-Twig-Demo
-A basic web application using Flight PHP microframework, RedBeanPHP ORM, and Twig template engine with simple CRUD operations.
+A Swoole-powered PHP CRUD application with Flight microframework, RedBeanPHP ORM, Twig templating, and async server architecture.
 
 ## Technology Stack
 
