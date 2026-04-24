@@ -5,7 +5,7 @@ A basic web application using Flight PHP microframework, RedBeanPHP ORM, and Twi
 
 ![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php&logoColor=white)
 ![Swoole](https://img.shields.io/badge/Swoole-Async-ff69b4)
-![Flight](https://img.shields.io/badge/Flight-Micro--Framework-555555)
+![Flight](https://img.shields.io/badge/Flight-Micro--Framework-777BB4)
 ![RedBeanPHP](https://img.shields.io/badge/RedBeanPHP-ORM-red)
 ![Twig](https://img.shields.io/badge/Twig-Templating-009688?logo=twig&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
