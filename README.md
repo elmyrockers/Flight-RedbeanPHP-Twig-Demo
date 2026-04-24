@@ -1,6 +1,16 @@
 # Flight-RedbeanPHP-Twig-Demo
 A basic web application using Flight PHP microframework, RedBeanPHP ORM, and Twig template engine with simple CRUD operations.
 
+## Tech Stack
+
+- PHP
+- Swoole (Async HTTP Server)
+- Flight (Micro Framework)
+- RedBeanPHP (ORM)
+- Twig (Templating Engine)
+- SQLite (Database)
+- Docker (Containerization)
+
 ## Potential Challenges We're Preparing For
 > - **Early-Stage Budget Constraints:** Initially, we’ll deploy to shared hosting to keep costs low while validating demand.
 > - **Scalability Needs:** If user activity increases, we need the flexibility to move to a VPS and scale gradually.
